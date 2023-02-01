@@ -10,16 +10,18 @@ function Home() {
           <p>BELLA COLLECTIONS</p>
         </div>
       </div>
-      <div className="container-fluid mt-5">
-        <div className="container">
-            {productData.map((product) => (
-                <ProductCards 
+      <div className="container mt-5">
+        <div className="row mt-5 mb-5">
+          {productData.map((product) => (
+            <div className="col-lg-3 mt-4">
+              <ProductCards
                 productID={product.productID}
                 productName={product.productName}
                 productPrice={product.productPrice}
                 productImage={product.productImage}
-                />
-            ))}
+              />
+            </div>
+          ))}
         </div>
       </div>
     </>
